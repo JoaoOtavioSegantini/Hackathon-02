@@ -22,7 +22,6 @@ export const UserNameText = styled.p`
 
   img {
     cursor: pointer;
-
   }
 
   .logout {
@@ -31,7 +30,6 @@ export const UserNameText = styled.p`
     line-height: 29px;
     color: #000000;
     margin-right: 50px;
-
   }
   ${media.lessThan('medium')`
     margin-right: 15vw;

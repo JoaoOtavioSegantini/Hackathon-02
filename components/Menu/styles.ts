@@ -12,7 +12,7 @@ export const Wrapper = styled.div`
 
     .addicon > svg {
       margin-top: -2px;
-    margin-bottom: -12px;
+      margin-bottom: -12px;
     }
 
     svg {
@@ -22,6 +22,5 @@ export const Wrapper = styled.div`
       margin-top: 8px;
       cursor: pointer;
     }
-
   `}
 `
