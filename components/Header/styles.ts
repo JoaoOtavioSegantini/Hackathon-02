@@ -14,14 +14,14 @@ const wrapperModifiers = {
 
 export const HeaderContainer = styled.div<HeaderProps>`
   ${({ theme, isSpaced }) => css`
-  position: relative;
+    position: relative;
     .text-logo {
       margin-left: 95px;
       font-style: normal;
       font-weight: 600;
       font-size: 35px;
       line-height: 42px;
-      color: #9701f0;
+      color: ${theme.colors.primary};
       position: absolute;
     }
     display: flex;

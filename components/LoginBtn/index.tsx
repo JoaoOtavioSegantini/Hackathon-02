@@ -1,20 +1,22 @@
-import * as S from "./styles"
-import { useRouter } from "next/router"
+import * as S from './styles'
+import { useRouter } from 'next/router'
 
 const LoginBtn = () => {
-
-const router = useRouter();
+  const router = useRouter()
 
   return (
-    <S.Wrapper className="container" onAnimationEnd={() => {
-      const container = document.querySelector('.container')!
-      container.classList.remove('active')
-      router.push("/Dashboard")
-
-    }} onClick={(e) =>{
-      const container = document.querySelector('.container')!
-      container.classList.toggle('active')
-      }}>
+    <S.Wrapper
+      className="container"
+      onAnimationEnd={() => {
+        const container = document.querySelector('.container')!
+        container.classList.remove('active')
+        router.push('/Dashboard')
+      }}
+      onClick={e => {
+        const container = document.querySelector('.container')!
+        container.classList.toggle('active')
+      }}
+    >
       <span className="text">Entrar </span>
       <svg
         className="fingerprint fingerprint-base"

@@ -1,10 +1,17 @@
-import { CardContainer, Title, Paragraph, ButtonsContainer, DetailsBtn, Price } from './styles'
+import {
+  CardContainer,
+  Title,
+  Paragraph,
+  ButtonsContainer,
+  DetailsBtn,
+  Price
+} from './styles'
 
 export type CardProps = {
   isSpaced?: boolean
 }
 
-const Card: React.FC<CardProps> = ({ isSpaced = false }) => {
+const Card: React.FC<CardProps> = () => {
   return (
     <>
       <CardContainer>
@@ -15,7 +22,10 @@ const Card: React.FC<CardProps> = ({ isSpaced = false }) => {
         </Paragraph>
         <ButtonsContainer>
           <DetailsBtn>Ver detalhes</DetailsBtn>
-          <Price><img src="price-tag.svg" />R$ 20,00/dia</Price>
+          <Price>
+            <img src="price-tag.svg" />
+            R$ 20,00/dia
+          </Price>
         </ButtonsContainer>
       </CardContainer>
     </>

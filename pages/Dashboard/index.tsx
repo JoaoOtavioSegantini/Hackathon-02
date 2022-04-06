@@ -12,7 +12,7 @@ const Dashboard: React.FC = () => {
   return (
     <>
       <Header>
-        <Logo size="small" /> <div className='text-logo'>Agende-se</div>
+        <Logo size="small" /> <div className="text-logo">Agende-se</div>
         <LoggedInUser>
           <span className="logout">Logout</span>
           <img src="avatar.svg" /> <span>{'John Smith'}</span>

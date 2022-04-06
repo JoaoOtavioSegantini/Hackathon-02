@@ -4,11 +4,10 @@ import media from 'styled-media-query'
 import { LogoProps } from '.'
 
 const wrapperModifiers = {
-
   small: () => css`
-  width: 63px;
-  height: 73.37px;
-`,
+    width: 63px;
+    height: 73.37px;
+  `,
 
   normal: () => css`
     width: 15rem;
@@ -36,7 +35,7 @@ const wrapperModifiers = {
 }
 
 export const Wrapper = styled.img<LogoProps>`
-  ${({ theme, color, size, hideOnMobile }) => css`
+  ${({ size, hideOnMobile }) => css`
     ${!!size && wrapperModifiers[size]}
     ${!!hideOnMobile && wrapperModifiers.hideOnMobile}
   `}
